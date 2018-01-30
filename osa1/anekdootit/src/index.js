@@ -52,6 +52,7 @@ class App extends React.Component {
 		return (
 			<div>
 				{this.props.anecdotes[this.state.selected]}<br/>
+				has {this.state.pisteet[this.state.selected]} votes<br/>
 				<Button handleClick={this.giveVote(this.state.selected)}
 				        text='vote'/>
 				<Button handleClick={this.randomNumber(anecdotes.length)}
